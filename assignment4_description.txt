@@ -1,0 +1,18 @@
+The intended animation was a rotating sun in the center, planets orbiting around the sun and rotating, and some planets with moons/ rings orbiting them while they orbit the sun. I ended up removing the rotating sun because it was hard to tell it was rotating and i instead made the rays randomly flare out to simulate the fire on the sun. Instead of the planets rotating, they just orbit the sun and have moons orbiting them, for the same reason the sun doesn't rotate.
+
+The orbit class takes in the radius, speed, and orbit line height and width. It then calculates the angle of orbit based on the speed and the x and y positions as the planets move. The run function within sets the matrix to the center and draws the planets and orbits.
+
+The sunRays function animates the rays around the sun. It takes in the total number of rays (90), the step of the rays (360/90 so its equal), and a variable called rayArray that is filled with 500 random values for the radius of the rays. It then calculates the x and y position for each ray and sets a vertex at that point so they come to a peak (kinda like fire flames).
+
+The planets function sets the color of the planets and implements the orbit classes' run function to display the planet and orbit line. I split it like this to make each planet easy to edit on it's own.
+
+
+The comet class moves a elongated ellipse across the top and bottom of the screen to look like a comet in space.
+
+
+
+
+Who did what:
+-Rebecca: orbit class, sunRays function, planets function.
+-Sophie: comet class, move function
+-Yazen: (to be completed later)
